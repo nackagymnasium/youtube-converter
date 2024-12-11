@@ -1,0 +1,16 @@
+{
+    "name": "youtube-to-mp3-mp4",
+    "version": "1.0.0",
+    "description": "YouTube to MP3 and MP4 converter website",
+    "scripts": {
+      "dev": "next dev",
+      "build": "next build",
+      "start": "next start"
+    },
+    "dependencies": {
+      "next": "13.4.7",
+      "react": "18.2.0",
+      "react-dom": "18.2.0",
+      "ytdl-core": "^4.11.4"
+    }
+  }  
