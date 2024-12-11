@@ -1,13 +1,19 @@
 {
-    "version": 2,
-    "builds": [
-      {
-        "src": "api/download.js",
-        "use": "@vercel/node"
-      },
-      {
-        "src": "pages/**/*",
-        "use": "@vercel/next"
-      }
-    ]
-  }  
+  "version": 2,
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/next"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "/api/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/"
+    }
+  ]
+}
